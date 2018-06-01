@@ -1,0 +1,26 @@
+server:
+  port: 18081
+  servlet:
+    context-path: /uaa
+
+security:
+  oauth2:
+    client:
+      client-id: demo
+      client-secret: demo
+      scope: openid
+      authorized-grant-types: password,authorization_code
+
+spring:
+  security:
+    user:
+      password: password
+
+      
+#security:
+#  oauth2:
+#    client:
+#      client-id: acme
+#      client-secret: acmesecret
+#      scope: read,write
+#      auto-approve-scopes: '.*'
